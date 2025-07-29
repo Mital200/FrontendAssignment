@@ -1,7 +1,7 @@
 const products = [
-  { name: "Tomato", price: 30, image: "/tomato.png" },
-  { name: "Carrots", price: 22, image: "/carrots.png" },
-  { name: "Cucumbers", price: 40, image: "/cucumber.png" },
+  { name: "Tomato", price: 30, image: "/tomato.avif" },
+  { name: "Carrots", price: 22, image: "/carrots.jpg" },
+  { name: "Cucumbers", price: 40, image: "/cucumber.webp" },
 ];
 
 export default function SuggestedProducts() {
@@ -18,7 +18,7 @@ export default function SuggestedProducts() {
           </div>
         ))}
       </div>
-      <button className="mt-3 ml-100 bg-green-700 text-white px-4 py-2 rounded hover:bg-green-800 text-sm sm:text-base">View All Products</button>
+      <button className="mt-3 ml-120 bg-green-700 text-white px-4 py-2 rounded hover:bg-green-800 text-sm sm:text-base">View All Products</button>
     </section>
   );
 }
