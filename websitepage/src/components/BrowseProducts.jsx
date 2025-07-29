@@ -34,7 +34,7 @@ export default function BrowseProducts() {
   return (
     <section className="py-8 px-6">
       <h3 className="text-xl font-semibold mb-4">Browse Products</h3>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
         {allProducts.map((veg, i) => (
           <div key={i} className="bg-white p-4 rounded shadow text-center">
             <img src={veg.img} alt={veg.veg} className="h-40 mx-auto" />

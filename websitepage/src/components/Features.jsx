@@ -6,13 +6,21 @@ export default function Features() {
   ];
 
   return (
-    <section className="flex justify-around items-center py-6 bg-white text-green-700 text-sm font-medium">
-      {features.map((f, i) => (
-        <div key={i} className="text-center">
-          <img src={f.img} className="h-20 object-contain"/>
-          <p>{f.label}</p>
-        </div>
-      ))}
+    <section className="bg-white py-6 px-4 sm:px-8">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+        {features.map((item, index) => (
+          <div key={index} className="flex flex-col items-center">
+            <img
+              src={item.img}
+              alt={item.label}
+              className="w-14 h-14 sm:w-20 sm:h-20 mb-2 object-contain"
+            />
+            <p className="text-sm sm:text-base text-green-700 font-medium">
+              {item.label}
+            </p>
+          </div>
+        ))}
+      </div>
     </section>
   );
 }

@@ -10,10 +10,11 @@ function App() {
 
   return (
     <>
-      <div className="font-sans">
+      <div className="font-sans container mx-auto px-4">
         <Navbar />
         <HeroSection />
         <Features />
+        <SuggestedProducts/>
         <BrowseProducts />
         <DeliveryInfo />
         <Footer />
